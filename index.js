@@ -1,12 +1,13 @@
-const express = require("express");
-const app = express();
+// 一个最小的 Node.js HTTP 服务器，无任何依赖
+const http = require('http');
 
 const port = process.env.PORT || 3000;
 
-app.get("/", (req, res) => {
-  res.send("✅ Shiper App Node.js 部署成功！");
+const server = http.createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
+  res.end('✅ Shiper Node.js 部署成功！');
 });
 
-app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
+server.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });
