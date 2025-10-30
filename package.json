@@ -1,1 +1,12 @@
-{"name":"Mwers","version":"1.2.0","description":"adftsssssss","main":"index.js","author":"wine","license":"MIT","private":false,"scripts":{"start":"node index.js","test":"echo \"Error: no \" && exit 1"},"dependencies":{},"engines":{"node":">=14"}}
+{
+  "name": "shiper-node-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "echo 'No build step required'"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
